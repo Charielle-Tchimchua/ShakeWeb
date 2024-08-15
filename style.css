@@ -1,0 +1,35 @@
+* {
+}
+
+body {
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffff;
+}
+.navbar a {
+  color: grey; 
+  text-decoration: none;
+  padding: 10px 15px;
+  margin: 0 5px;
+  transition: background-color 0.3s ease; /* Pour des effets de transition doux */
+}
+
+.navbar a:hover {
+  background-color: #ffff;
+  color: #ffa500; 
+
+.navbar .logo {
+    font-size: 24px; 
+    font-weight: bold;
+    color: white;
+}
+
+.navbar .logo img {
+    max-height: 50px; /* Taille max du logo en image */
+    margin-right: 10px;
+}
