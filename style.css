@@ -2,34 +2,214 @@
 }
 
 body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  background-color: #ffff;
+  border: slategrey;
+  padding: 10px 150px;
+  background-color: #ffffff;
+  height: 50px;
+  border-bottom: 2px solid #ccc;
 }
 .navbar a {
-  color: grey; 
+  color: rgb(78, 78, 78);
   text-decoration: none;
+  align-items: center;
   padding: 10px 15px;
   margin: 0 5px;
   transition: background-color 0.3s ease; /* Pour des effets de transition doux */
 }
 
 .navbar a:hover {
-  background-color: #ffff;
-  color: #ffa500; 
+  color: #ffa500;
+}
 
 .navbar .logo {
-    font-size: 24px; 
-    font-weight: bold;
-    color: white;
+  font-weight: bold;
+  color: white;
+  width: 200px; /* Increase this value to make the logo bigger */
+  height: 50px;
+  max-height: 100%;
 }
 
 .navbar .logo img {
-    max-height: 50px; /* Taille max du logo en image */
-    margin-right: 10px;
+  max-height: 50px; /* Taille max du logo en image */
+  margin-right: 10px;
+}
+
+/* Style de base pour la liste */
+.items {
+  align-items: center;
+  display: flex; /* Affiche les éléments en ligne */
+  justify-content: center; /* Centre les éléments horizontalement */
+  list-style: none;
+  padding: 0; /* Supprime le padding par défaut */
+  margin: 0;
+}
+
+.items li {
+  margin: 0 10px; /* Ajoute de l'espace entre les éléments */
+}
+
+.items a {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centre les éléments horizontalement */
+  text-decoration: none; /* Supprime le soulignement des liens */
+  color: #848488; /* Couleur du texte des liens */
+}
+
+.items img {
+  width: 24px; /* Largeur des icônes */
+  height: 24px; /* Hauteur des icônes */
+  filter: brightness(1) invert(1); /* Change la couleur des icônes à blanc */
+  transition: filter 0.3s; /* Transition pour les changements de couleur */
+}
+
+.items img:hover {
+  filter: brightness(0) invert(0.2); /* Change la couleur des icônes au survol */
+}
+
+.items h3 {
+  font-size: 12px;
+  margin-top: 5px; /* Espace au-dessus du texte */
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start; /* Aligne le contenu à gauche */
+  width: 50%;
+  height: 80vh;
+  background: #fffcfc; /* Couleur de fond (ajustez selon votre design) */
+}
+
+.hero-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligne le contenu à gauche */
+  padding: 20px; /* Ajustez le padding selon vos besoins */
+  width: 50%; /* Ajustez la largeur pour laisser de la place à autre chose à droite */
+}
+
+.text-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden; /* Masque le texte qui dépasse */
+}
+
+.hero-content h1 {
+  font-size: 2.5em;
+  color: #ff0000;
+}
+
+.animated-text {
+  color: #000000; /* Couleur du texte en noir (ajustez selon vos besoins) */
+  font-size: 3rem;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  opacity: 0; /* Initialement caché */
+  animation: fadeInOut 30s infinite;
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 10px;
+  width: 10px;
+  padding: 5px 100px;
+}
+
+.animated-text:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.animated-text:nth-child(2) {
+  animation-delay: 10s;
+}
+
+.animated-text:nth-child(3) {
+  animation-delay: 20s;
+}
+
+@keyframes fadeInOut {
+  0%,
+  9.99% {
+    opacity: 1;
+  }
+  10%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slideText {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.features-section {
+  background: radial-gradient(circle, #f84a1e, #6f69aa);
+  padding: 40px 0;
+  color: white;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Features Container */
+.features-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.feature-box {
+  color: #ff0000;
+  width: 300px;
+  padding: 20px;
+  margin: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.1); /* Bordure légère */
+  border-radius: 50% / 30%; /* Forme ovale pour l'effet goutte d'eau */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.6
+  ); /* Fond plus clair et plus transparent */
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Ombre pour effet de profondeur */
+  backdrop-filter: blur(8px); /* Effet de flou en arrière-plan */
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.feature-description {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
 }
