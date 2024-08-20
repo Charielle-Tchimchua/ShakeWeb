@@ -1,1 +1,40 @@
-{}
+{
+  "hero": {
+    "text1": "Meilleure gestion des ventes",
+    "text2": "Optimisez vos processus de vente",
+    "text3": "Augmentez vos revenus"
+  },
+  "features": {
+    "title": "Fonctionnalités clés",
+    "feature1": {
+      "title": "Gestion des Ventes",
+      "description": "Traitement des Transactions : Gère les transactions de vente, prend en charge la numérisation des codes-barres, et génère des reçus/factures.\nPersonnalisation des Factures : Offre des formats de factures personnalisables adaptés à chaque entreprise."
+    },
+    "feature2": {
+      "title": "CRM",
+      "description": "Gestion de l'Information : Maintient les profils clients, historiques d'achats et programmes de fidélité.\nProgrammes de Fidélité : Suivi et gestion des points de fidélité ou des remises pour les clients réguliers."
+    },
+    "feature3": {
+      "title": "Intégration et Compatibilité",
+      "description": "Intégration avec Imprimantes Thermiques : Compatible avec les imprimantes thermiques pour une impression rapide et efficace des reçus.\nMode Hors Ligne : Fonctionnalités de base disponibles sans connexion internet, assurant un service ininterrompu."
+    }
+  },
+  "faq": {
+    "title": "Questions Fréquemment Posées",
+    "question1": "De quoi s'agit-il?",
+    "answer1": "SHAKE est une application de gestion des ventes qui permet aux entreprises de traiter des transactions, d'intégrer des imprimantes thermiques pour l'impression rapide des reçus et factures, et de gérer les programmes de fidélité des clients. Elle comprend également des fonctionnalités CRM pour la gestion des profils clients, des historiques d'achats, etc.",
+    "question2": "Comment puis-je utiliser ce service?",
+    "answer2": "Pour utiliser SHAKE, vous devez d'abord installer l'application sur un appareil compatible, tel qu'un smartphone. Une fois installée, vous pouvez configurer vos options de vente et de facturation, commencer à traiter les transactions, puis l'intégrer à votre imprimante thermique tout en gérant les relations clients grâce aux fonctionnalités CRM.",
+    "question3": "Quels sont les avantages de l'utilisation de ce service?",
+    "answer3": "Efficacité accrue : Traitement rapide des transactions et impression instantanée des reçus.\nPersonnalisation : Capacité de personnaliser les formats de factures pour répondre aux besoins spécifiques de votre entreprise.\nGestion Améliorée des Clients : Suivi des profils clients, des historiques d'achats et gestion des programmes de fidélité.\nFonctionnalité Hors Ligne : Continuer à utiliser les fonctionnalités de base même sans connexion internet.",
+    "question4": "Y a-t-il une période d'essai disponible?",
+    "answer4": "Oui, SHAKE offre une période d'essai gratuite qui vous permet de tester toutes les fonctionnalités principales avant de vous engager. Cela vous permet de voir comment l'application peut améliorer la gestion des ventes et les relations clients au sein de votre entreprise.",
+    "question5": "Comment puis-je contacter le support?",
+    "answer5": "Vous pouvez contacter le support par plusieurs canaux :\nEmail : support@shakeapp.com.\nTéléphone : Appelez-nous au +123 456 789 pour une assistance directe."
+  },
+  "footer": {
+    "about": "À propos de nous",
+    "quickLinks": "Liens rapides",
+    "contact": "Nous contacter",
+    "follow": "Suivez-nous",
+    "allRights": "&copy; 2024 OpenXtech.

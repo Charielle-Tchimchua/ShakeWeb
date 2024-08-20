@@ -1,1 +1,42 @@
-{}
+{
+  "hero": {
+    "text1": "Best sales management",
+    "text2": "Optimize your sales processes",
+    "text3": "Increase your revenue"
+  },
+  "features": {
+    "title": "Key Features",
+    "feature1": {
+      "title": "Sales Management",
+      "description": "Transaction Processing: Handles sales transactions, supports barcode scanning, and generates receipts/invoices.\nInvoice Customization: Offers customizable invoice formats tailored to specific business."
+    },
+    "feature2": {
+      "title": "CRM",
+      "description": "Information Management: Maintains customer profiles, purchase histories, and loyalty programs.\nLoyalty Programs: Tracks and manages loyalty points or discounts for repeat customers."
+    },
+    "feature3": {
+      "title": "Integration and Compatibility",
+      "description": "Integration with Thermal Printers: Compatible with thermal printers for quick and efficient receipt printing.\nOffline Mode: Basic functionality available without an internet connection, ensuring uninterrupted service."
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "question1": "What is this service about?",
+    "answer1": "SHAKE is a sales management application that allows businesses to process transactions, integrate thermal printers for quick receipt and invoice printing, and manage customer loyalty programs. It also includes CRM features for managing customer profiles, purchase histories, and more.",
+    "question2": "How can I use this service?",
+    "answer2": "To use SHAKE, you first need to install the application on a compatible device, such as a smartphone. Once installed, you can configure your sales and billing options, and start processing transactions then integrate it with your thermal printer, while managing customer relationships through the CRM features.",
+    "question3": "What are the benefits of using this service?",
+    "answer3": "Increased Efficiency: Fast transaction processing and instant receipt printing.\nCustomization: Ability to customize invoice formats to meet the specific needs of your business.\nEnhanced Customer Management: Track customer profiles, purchase histories, and manage loyalty programs.\nOffline Functionality: Continue using basic features even without an internet connection.",
+    "question4": "Is there a trial period available?",
+    "answer4": "Yes, SHAKE offers a free trial period that allows you to test all the main features before committing. This lets you see how the application can improve sales management and customer relationships within your business.",
+    "question5": "How can I contact support?",
+    "answer5": "You can contact support by support through several channels:\nEmail: support@shakeapp.com.\nPhone: Call us at +123 456 789 for direct assistance."
+  },
+  "footer": {
+    "about": "About Us",
+    "quickLinks": "Quick Links",
+    "contact": "Contact Us",
+    "follow": "Follow Us",
+    "allRights": "&copy; 2024 OpenXtech. All rights reserved."
+  }
+}
