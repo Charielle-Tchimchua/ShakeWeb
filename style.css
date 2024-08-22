@@ -85,47 +85,63 @@ body {
   margin-top: 5px; /* Espace au-dessus du texte */
 }
 
+/* Hero Section Styling */
 .hero {
-  position: relative;
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  align-items: flex-start; /* Aligne le contenu à gauche */
-  width: 50%;
-  height: 80vh;
-  background: #fffcfc; /* Couleur de fond (ajustez selon votre design) */
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #f7f7f7; /* Background color */
 }
 
 .hero-content {
-  position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start; /* Aligne le contenu à gauche */
-  padding: 20px; /* Ajustez le padding selon vos besoins */
-  width: 50%; /* Ajustez la largeur pour laisser de la place à autre chose à droite */
+  align-items: center;
+}
+
+.image-wrapper {
+  flex: 1; /* Takes up half the space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image {
+  max-width: 100%;
+  height: auto; /* Maintains aspect ratio */
 }
 
 .text-wrapper {
-  position: relative;
-  width: 100%;
-  overflow: hidden; /* Masque le texte qui dépasse */
-}
-
-.hero-content h1 {
-  font-size: 2.5em;
-  color: #ff0000;
+  flex: 1; /* Takes up half the space */
+  padding-left: 30px;
 }
 
 .animated-text {
-  color: #000000; /* Couleur du texte en noir (ajustez selon vos besoins) */
-  font-size: 3rem;
-  margin: 0;
+  font-size: 36px;
+  font-weight: bold;
+  color: #ff0000; /* Text color */
+  opacity: 0;
   position: absolute;
-  left: 0;
-  width: 100%;
-  opacity: 0; /* Initialement caché */
-  animation: fadeInOut 30s infinite;
+  animation: fadeInOut 9s infinite;
 }
+
+.animated-text:nth-child(2) {
+  animation-delay: 3s;
+}
+
+.animated-text:nth-child(3) {
+  animation-delay: 6s;
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0;
+  }
+  10%, 90% {
+    opacity: 1;
+  }
+}
+
 
 .features-section {
   background: radial-gradient(circle, #f84a1e, #6f69aa);
