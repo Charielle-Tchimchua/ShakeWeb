@@ -19,7 +19,7 @@ body {
   top: 0;
   z-index: 1000;
   width: 100%;
-  position: fixed ;
+  position: fixed;
 }
 
 .navbar a {
@@ -37,7 +37,7 @@ body {
 
 .navbar .logo {
   color: white;
-  width: 80px; /* Increase this value to make the logo bigger */
+  /* width: 70px;  */
   height: 55px;
   max-height: 100%;
 }
@@ -45,6 +45,31 @@ body {
 .navbar .logo img {
   max-height: 50px; /* Taille max du logo en image */
   margin-right: 10px;
+}
+
+.navbar-red {
+  background-color: red;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.download-button {
+  background-color: white;
+  color: red;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: red;
+  color: white;
 }
 
 /* Style de base pour la liste */
@@ -91,7 +116,10 @@ body {
   justify-content: center;
   align-items: center;
   padding: 50px 20px;
-  background-color: #f7f7f7; /* Background color */
+  /* background-image: url("public/pexels-jakubzerdzicki-20701001.jpg");
+  background-size: cover; /* Ensures the image covers the entire element 
+  background-repeat: no-repeat;  Prevents the image from repeating 
+  background-position: center center; */
 }
 
 .hero-content {
@@ -107,8 +135,9 @@ body {
 }
 
 .hero-image {
-  max-width: 100%;
+  max-width: 80%;
   height: auto; /* Maintains aspect ratio */
+  margin-top: 50px;
 }
 
 .text-wrapper {
@@ -119,10 +148,13 @@ body {
 .animated-text {
   font-size: 36px;
   font-weight: bold;
-  color: #ff0000; /* Text color */
+  color: #af0a0a; /* Text color */
   opacity: 0;
   position: absolute;
   animation: fadeInOut 9s infinite;
+  margin-top: -70px;
+  margin-bottom: 10px;
+  margin-left: 50px;
 }
 
 .animated-text:nth-child(2) {
@@ -134,14 +166,16 @@ body {
 }
 
 @keyframes fadeInOut {
-  0%, 100% {
+  0%,
+  25%,
+  100% {
     opacity: 0;
   }
-  10%, 90% {
+  10%,
+  20% {
     opacity: 1;
   }
 }
-
 
 .features-section {
   background: radial-gradient(circle, #f84a1e, #6f69aa);
@@ -420,5 +454,21 @@ body {
 }
 
 .audience-photos img:nth-child(2) {
-  transform: translateY(-20px); /*
+  transform: translateY(-20px);
+}
+
+.présentation {
+  width: 50%;
+}
+.titre1 {
+  color: #de2443;
+  margin-left: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.paragraphe1 {
+  margin-left: 50px;
+  font-size: 18px;
+  color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
