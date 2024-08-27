@@ -25,11 +25,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: slategrey;
-  padding: 10px;
+  padding: 5px;
   background-color: #ffffff;
-  height: 50px;
-  border-bottom: 2px solid #ccc;
+  height: 5%;
   top: 0;
   z-index: 1000;
   width: 100%;
@@ -52,6 +50,7 @@ body {
 .navbar .logo {
   height: 50px;
   max-height: 100%;
+  padding: 100px;
 }
 
 .navbar .logo img {
@@ -62,29 +61,32 @@ body {
 .navbar-red {
   padding: 10px 20px;
   display: flex;
-  height: 500px;
+  height: 29%;
   justify-content: flex-end;
   align-items: center;
   position: relative;
-  margin-top: 70px; /* Position it directly below the first navbar */
+  margin-top: 4.5%; /* Position it directly below the first navbar */
   z-index: 1;
 }
 
 .download-button {
+  width: 15%;
   background-color: white;
   color: #c70039;
   padding: 10px 20px;
+  margin-right: 80px;
+  margin-top: 1%;
   border: none;
   border-radius: 5px;
-  font-size: 16px;
+  /* font-size: 14px; */
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .download-button:hover {
-  background-color: red;
-  color: white;
+  background-color: red !important;
+  color: white !important;
 }
 
 /* Style de base pour la liste */
@@ -93,7 +95,7 @@ body {
   display: flex; /* Affiche les éléments en ligne */
   justify-content: center; /* Centre les éléments horizontalement */
   list-style: none;
-  padding: 0; /* Supprime le padding par défaut */
+  padding: 100px; /* Supprime le padding par défaut */
   margin: 0;
 }
 
@@ -123,6 +125,77 @@ body {
 .items h3 {
   font-size: 12px;
   margin-top: 5px; /* Espace au-dessus du texte */
+}
+
+/* Pour les écrans moyens (tablettes) */
+@media (max-width: 950px) {
+  .download-button {
+    font-size: 10px;
+  }
+  .navbar a {
+    font-size: 14px;
+  }
+
+  .items img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .items h3 {
+    font-size: 10px;
+  }
+}
+
+/* Pour les petits écrans (mobiles) */
+@media (max-width: 730px) {
+  .download-button {
+    font-size: 7px;
+  }
+  .navbar .logo {
+    height: 38px;
+    padding: 50px;
+  }
+
+  .navbar a {
+    font-size: 12px;
+  }
+
+  .items img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .items h3 {
+    font-size: 8px;
+  }
+
+  .items li:not(:first-child):not(:nth-child(3)) {
+    display: none; /* Cache tous les éléments sauf le menu et la connexion */
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar .logo {
+    height: 30px;
+    padding: 30px;
+  }
+
+  .navbar a {
+    font-size: 12px;
+  }
+
+  .items img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .items h3 {
+    font-size: 8px;
+  }
+
+  .items li:not(:first-child):not(:nth-child(3)) {
+    display: none; /* Cache tous les éléments sauf le menu et la connexion */
+  }
 }
 
 /* Hero Section Styling */
@@ -251,6 +324,80 @@ body {
   }
 }
 
+/* Pour les écrans de taille moyenne (tablettes) */
+@media (max-width: 1200px) {
+  .vedette {
+    font-size: 90px; /* Réduit la taille du texte principal */
+  }
+
+  .animated-text {
+    font-size: 50px; /* Réduit la taille des textes animés */
+  }
+
+  .text-wrapper {
+    padding-left: 25px; /* Réduit le padding pour les petits écrans */
+  }
+
+  .download-app-button {
+    font-size: 21px;
+  }
+}
+
+/* Pour les petits écrans (mobiles) */
+@media (max-width: 930px) {
+  .vedette {
+    font-size: 80px; /* Encore plus petit pour les très petits écrans */
+  }
+
+  .animated-text {
+    font-size: 40px; /* Encore plus petit pour les très petits écrans */
+  }
+
+  .text-wrapper {
+    padding-left: 20px; /* Réduit encore le padding pour les très petits écrans */
+  }
+
+  .download-app-button {
+    font-size: 15px;
+  }
+
+  .image-wrapper {
+    display: none; /* Cache l'image wrapper sur les très petits écrans */
+  }
+
+  .hero {
+    flex-direction: column; /* Arrange le contenu en colonne */
+    align-items: flex-start; /* Aligne le contenu à gauche */
+  }
+}
+
+@media (max-width: 480px) {
+  .vedette {
+    font-size: 65px; /* Encore plus petit pour les très petits écrans */
+  }
+
+  .download-app-button {
+    font-size: 10px;
+  }
+  .animated-text {
+    font-size: 30px; /* Encore plus petit pour les très petits écrans */
+  }
+
+  .text-wrapper {
+    padding-left: 10px; /* Réduit encore le padding pour les très petits écrans */
+  }
+
+  .image-wrapper {
+    display: none; /* Cache l'image wrapper sur les très petits écrans */
+  }
+
+  .hero {
+    flex-direction: column; /* Arrange le contenu en colonne */
+    align-items: flex-start; /* Aligne le contenu à gauche */
+  }
+}
+
+/*features */
 .features-section {
   background: radial-gradient(circle, #f84a1e, #6f69aa);
   padding: 40px 0;
@@ -537,4 +684,19 @@ body {
 .titre1 {
   color: #de2443;
   margin-left: 50px;
+}
+
+@media (max-width: 1030px) {
+  .audience-title {
+    font-size: 20px;
+  }
+
+  .audience-photo {
+    width: 40%;
+    height: 40%;
+  }
+
+  .audience-section {
+    width: 80%;
+  }
 }
