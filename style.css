@@ -449,6 +449,22 @@ body {
   color: #000000;
 }
 
+@media (max-width: 1200px) {
+  .feature-box {
+    width: 60%; /* Réduit la largeur des boîtes à 80% de l'écran */
+    padding: 15px; /* Réduit le padding */
+    margin: 15px 0; /* Augmente l'espace entre les boîtes */
+  }
+
+  .feature-description {
+    font-size: 75%;
+  }
+
+  .feature-title {
+    font-size: 90%; /* Réduit la taille du texte */
+  }
+}
+
 /***   FAQs     ****/
 
 .faq-section {
@@ -495,6 +511,52 @@ body {
   transform: rotate(45deg);
 }
 
+/* Pour les écrans de taille moyenne (tablettes) */
+@media (max-width: 900px) {
+  .faq-section {
+    padding: 15px;
+    max-width: 90%; /* Réduit la largeur maximale pour qu'elle soit plus adaptée aux tablettes */
+  }
+
+  .faq-question {
+    font-size: 80%; /* Réduit la taille de la question */
+  }
+
+  .faq-answer {
+    font-size: 80%; /* Réduit la taille de la réponse */
+  }
+}
+
+/* Pour les petits écrans (mobiles) */
+@media (max-width: 480px) {
+  .faq-section {
+    padding: 10px;
+    max-width: 100%; /* La section prend toute la largeur de l'écran */
+  }
+
+  .faq-question {
+    font-size: 70%; /* Réduit encore la taille de la question */
+    padding: 8px 0; /* Réduit le padding */
+  }
+
+  .faq-answer {
+    font-size: 70%;
+    padding: 8px 0; /* Réduit le padding */
+  }
+
+  .faq-item {
+    margin-bottom: 8px; /* Réduit l'espace entre les items */
+  }
+
+  .faq-question::after {
+    font-size: 18px; /* Ajuste la taille de l'icône "+" */
+  }
+
+  .faq-section h2 {
+    font-size: 90%;
+  }
+}
+
 #language-switcher {
   width: 50px;
   padding: 10px;
@@ -530,6 +592,7 @@ body {
 
 .footer-container {
   display: flex;
+  flex-wrap: wrap; /* Allows columns to wrap on smaller screens */
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
@@ -537,19 +600,19 @@ body {
 }
 
 .footer-column {
-  flex: 1;
+  flex: 1; /* Each column takes up full width on small screens */
   margin-right: 20px;
 }
 
 .footer-column h4 {
-  font-size: 18px;
+  font-size: 24px;
   margin-bottom: 20px;
   color: #fff;
 }
 
 .footer-column p,
 .footer-column ul {
-  font-size: 14px;
+  font-size: 20px;
   color: #ccc;
   line-height: 1.6;
 }
@@ -596,6 +659,38 @@ body {
   background-color: rgb(20, 20, 20);
   font-size: 14px;
   color: #777;
+}
+
+@media (max-width: 900px) {
+  .footer-column {
+    flex: 1; /* Columns take equal space on larger screens */
+    margin-right: 20px;
+    text-align: left;
+  }
+
+  .footer-column h4 {
+    font-size: 18px;
+  }
+
+  .footer-column p,
+  .footer-column ul {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 468px) {
+  .footer-column {
+    flex: 1 1 100%; /* Each column takes up full width on small screens */
+    margin-right: 0;
+  }
+  .footer-column h4 {
+    font-size: 15px;
+  }
+
+  .footer-column p,
+  .footer-column ul {
+    font-size: 10px;
+  }
 }
 
 .app-photos {
